@@ -1,0 +1,24 @@
+# Zenith Launcher 🚀
+
+**Zenith Launcher** is a minimal, distraction-free Android launcher built with **Jetpack Compose**. Designed for speed, simplicity, and mindful phone usage.
+
+---
+
+## ✨ Features
+
+- **Minimalist Design**: Clean black-and-white interface focused on high usability and zero clutter.
+- **App Drawer & Favorites**: Quick access to your essential apps with smooth interactions.
+- **Screen Time Tracking**: Built-in daily screen time monitoring powered by `UsageStatsManager`.
+- **Habits Tracker**: Simple daily check-in tool to help build and track positive routines.
+- **To-Do List**: Integrated task management to keep your day focused.
+- **Local Persistence**: Powered by **Room Database** for fast and reliable local storage.
+
+---
+
+## 🛠 Tech Stack
+
+- **Language**: Kotlin
+- **UI Framework**: Jetpack Compose
+- **Database**: Room Database
+- **Architecture**: MVVM (Model-View-ViewModel)
+- **Android APIs**: UsageStatsManager
