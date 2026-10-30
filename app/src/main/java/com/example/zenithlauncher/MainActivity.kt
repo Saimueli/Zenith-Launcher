@@ -2,6 +2,7 @@ package com.example.zenithlauncher
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.compose.BackHandler
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -50,6 +51,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainContent(viewModel: ZenithViewModel) {
     var currentTab by remember { mutableStateOf(TabItem.APPS) }
+
+    BackHandler(enabled = true) {
+        if (currentTab != TabItem.APPS) {
+            currentTab = TabItem.APPS
+        }
+    }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
